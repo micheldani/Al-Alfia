@@ -1,0 +1,252 @@
+.filter-list {
+  padding-right: 2rem;
+  text-align: right;
+}
+a.filter {
+  display: block;
+  font-family: "Bordonaro";
+  font-weight: normal;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 0.8;
+  padding: 0 1rem;
+  background-position: right bottom;
+  transform-origin: right;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+a.filter + a.filter {
+  margin: 0.6em 0 0;
+}
+a.filter:hover {
+  color: var(--copper);
+  transform: translateX(-12px);
+  transform: scale(1.1);
+}
+a.selected {
+  color: var(--copper);
+  transform: scale(1.1);
+  pointer-events: none;
+  background-image: var(--grad-gold);
+  background-size: 4px 85%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.subsidiary-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(32%, 100vw));
+  grid-gap: 1% 2%;
+}
+.subsidiary-cel {
+  display: none;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey-10);
+}
+.subsidiary-cel-filler {
+  min-width: 32%;
+}
+.subsidiary-overlay p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 1;
+  padding: 0.75em 0.25em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-image: var(--grad-gold);
+}
+.subsidiary-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+.subsidiary-overlay:hover {
+  opacity: 1;
+}
+.subsidiary-grid-logo {
+  max-width: 60%;
+  max-height: 60%;
+}
+.sector-img-container {
+  padding-left: 2rem;
+}
+.sector-img {
+  display: none;
+}
+.sector-title {
+  display: none;
+  font-size: 3rem;
+  text-align: center;
+}
+.show {
+  display: flex;
+}
+.show-img {
+  display: block;
+}
+.dropbtn {
+  display: none;
+}
+
+.subsidiary-id-card {
+  display: grid;
+  width: 100%;
+  grid-auto-rows: min-content;
+  grid-template-columns: 2fr 1fr;
+  gap: 0 1rem;
+}
+.side-ribbon {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+.subsidiary-logo-cel {
+  position: relative;
+}
+.back-button {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  text-decoration: none;
+  color: var(--copper);
+}
+.subsidiary-logo {
+  width: auto;
+  max-width: 100%;
+}
+.subsidiary-contact {
+  grid-column: 2 / 3;
+}
+.subsidiary-contact h2 {
+  font-size: 3rem;
+  margin: 1rem 0 1.5rem;
+}
+.subsidiary-contact a {
+  color: var(--grey-75);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.subsidiary-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 560px;
+  margin-right: 5%;
+}
+.subsidiary-info img {
+  margin-bottom: 2rem;
+}
+.subsidiary-info h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sector-title-container {
+  display: none;
+}
+
+/* 960 */
+
+@media screen and (max-width: 960px) {
+  .filter-list {
+    padding-right: 1rem;
+  }
+  a.filter {
+    font-size: 1.5rem;
+  }
+  .sector-img-container {
+    padding-left: 1rem;
+  }
+}
+
+/* 720 */
+
+@media screen and (max-width: 720px) {
+  .sector-title-container {
+    display: block;
+    width: 90%;
+    margin: 0 auto 0.5rem;
+  }
+  .subsidiary-grid {
+    grid-template-columns: repeat(2, minmax(48%, 100vw));
+  }
+  .subsidiary-id-card {
+    grid-template-columns: 5% 2fr 1fr;
+    gap: 0;
+    margin: 0 0 1rem;
+  }
+  .side-ribbon {
+    width: 50%;
+  }
+  .subsidiary-info {
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .show-img {
+    display: none;
+  }
+  .show-title {
+    display: block;
+  }
+  .dropbtn {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3rem;
+    padding: 0.5em;
+    margin: 0 0 2rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: left;
+    color: white;
+    border: 0;
+    align-self: center;
+  }
+  .filter-list {
+    display: none;
+    position: absolute;
+    width: 90%;
+    top: 3rem;
+    left: 50%;
+    padding: 1em 0;
+    transform: translateX(-50%);
+    background-color: var(--grey-10);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  a.filter {
+    font-size: 1.5rem;
+    text-align: center;
+    transform-origin: center;
+  }
+  a.filter + a.filter {
+    margin: 1em 0 0;
+  }
+  a.selected {
+    background-image: none;
+  }
+  .show-list {
+    display: block;
+  }
+
+  @media screen and (max-width: 420px) {
+    .subsidiary-overlay p {
+      top: 0;
+      height: 20%;
+      font-size: 0;
+    }
+    .sector-title {
+      font-size: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.carousel-container {
+  position: relative;
+  z-index: 1;
+}
+.carousel-item {
+  height: calc(100vh - calc(var(--logo-height) + var(--nav-padding-y) + var(--nav-padding-y)));
+  cursor: url(_assets/ui/cursor-arrow.png) 25 25, auto;
+}
+.carousel-item h1 {
+  text-shadow: 0 10px 50px #a58023;
+}
+.owl-prev,
+.owl-next {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.6;
+  width: 48px;
+}
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev span:hover,
+.owl-carousel .owl-nav button.owl-next span:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 720px) {
+  .carousel-item {
+    height: 400px;
+  }
+  .carousel-item h1 {
+    max-width: 90vw;
+  }
+}
