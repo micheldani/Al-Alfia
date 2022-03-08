@@ -37,7 +37,6 @@ html {
 
 body {
   position: relative;
-  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
@@ -57,12 +56,12 @@ header {
 }
 
 main {
-  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 7rem;
   z-index: 3;
@@ -85,7 +84,6 @@ section,
 .w-5-col,
 .w-4-col,
 .w-3-col {
-  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   position: relative;
@@ -100,7 +98,6 @@ section {
   margin: 0;
 }
 .block-content {
-  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
@@ -149,7 +146,6 @@ section {
   grid-column: 1 / 3;
 }
 .grid-panel {
-  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
@@ -166,6 +162,7 @@ figcaption {
   z-index: 2;
 }
 figure {
+  height: -moz-fit-content;
   height: fit-content;
 }
 figcaption {
@@ -243,7 +240,6 @@ button {
 /* NAVIGATION */
 
 .nav-container {
-  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   align-items: center;
@@ -257,7 +253,6 @@ button {
 }
 
 .nav-menu {
-  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   margin-left: auto;
@@ -310,7 +305,6 @@ button {
 .hero {
   position: relative;
 
-  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   padding: 0 10%;
@@ -361,7 +355,6 @@ button {
 /* FOOTER */
 
 footer {
-  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
@@ -372,7 +365,6 @@ footer {
 }
 
 .footer-container {
-  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
@@ -400,7 +392,6 @@ footer {
 }
 
 .footer-social {
-  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
@@ -433,7 +424,6 @@ footer {
   object-fit: cover;
 }
 .flex {
-  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
 }
@@ -463,7 +453,6 @@ footer {
   align-items: flex-end;
 }
 .flex-space-around {
-  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
@@ -519,7 +508,6 @@ footer {
     z-index: 4;
   }
   .responsive {
-    display: -webkit-box;
     display: -webkit-flex;
     display: flex;
   }
@@ -649,7 +637,7 @@ footer {
     font-size: 1.5rem;
   }
   .two-col-grid {
-    display: -webkit-box;
+    display: -ms-flex;
     display: -webkit-flex;
     display: flex;
     flex-direction: column;

@@ -96,6 +96,7 @@ a.selected {
   text-align: center;
 }
 .show {
+  display: -webkit-flex;
   display: flex;
 }
 .show-img {
@@ -145,6 +146,7 @@ a.selected {
 }
 
 .subsidiary-info {
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   max-width: 560px;

@@ -50,6 +50,7 @@
 }
 .careers-form,
 .contact-form {
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,6 +131,7 @@ input[type="file"]::file-selector-button:active {
   text-align: center;
 }
 .gradient-icons {
+  display: -webkit-flex;
   display: flex;
 }
 .gradient-icon {

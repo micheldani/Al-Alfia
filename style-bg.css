@@ -120,16 +120,16 @@
   content: url("_assets/ui/q-grey.svg");
   position: absolute;
   width: 360px;
-  opacity: 15%;
+  opacity: 0.15;
   bottom: -300px;
   left: -180px;
-  z-index: 1;
+  z-index: -1;
 }
 .q-grey-2::before {
   content: url("_assets/ui/q-grey-right.svg");
   position: absolute;
   width: 20%;
-  opacity: 15%;
+  opacity: 0.15;
   top: 50%;
   right: 0;
   z-index: 1;

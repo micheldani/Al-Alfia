@@ -39,6 +39,7 @@
 
 .owl-theme .owl-dots {
   position: absolute;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
