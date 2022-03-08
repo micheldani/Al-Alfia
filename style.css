@@ -166,6 +166,9 @@ figure {
   height: -moz-fit-content;
   height: fit-content;
 }
+figure img {
+  width: 100%;
+}
 figcaption {
   font-weight: 400;
   text-align: right;
@@ -502,7 +505,7 @@ footer {
     right: 2rem;
     padding: 1rem 2rem 2rem;
     justify-content: flex-start;
-    align-items: end;
+    align-items: flex-end;
     background-image: var(--grad-grey);
     box-shadow: 8px 8px 12px rgba(20, 20, 80, 0.2);
     outline: 1px solid white;
@@ -608,6 +611,7 @@ footer {
     justify-content: center;
   }
   figure img {
+    width: auto;
     max-height: 50vh;
   }
   figcaption {
