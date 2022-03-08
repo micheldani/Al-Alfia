@@ -1,6 +1,7 @@
 .filter-list {
   padding-right: 2rem;
   text-align: right;
+  z-index: 2;
 }
 a.filter {
   display: block;
@@ -39,7 +40,7 @@ a.selected {
   grid-gap: 1% 2%;
 }
 .subsidiary-cel {
-  display: block;
+  display: none;
   position: relative;
   width: 100%;
   height: -moz-fit-content;
@@ -71,12 +72,11 @@ a.selected {
   opacity: 1;
 }
 .subsidiary-grid-logo {
-  width: 60%;
   position: absolute;
+  width: 70%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
 }
 .subsidiary-cel-bg {
   width: 100%;
@@ -104,6 +104,7 @@ a.selected {
 }
 .dropbtn {
   display: none;
+  z-index: 2;
 }
 
 .subsidiary-id-card {
@@ -246,6 +247,7 @@ a.selected {
   }
   .show-list {
     display: block;
+    z-index: 3;
   }
 
   @media screen and (max-width: 420px) {

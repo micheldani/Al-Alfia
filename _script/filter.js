@@ -34,6 +34,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+filterSelection("all");
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("subsidiary-cel");
@@ -44,7 +45,6 @@ function filterSelection(c) {
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
 }
-filterSelection("all");
 
 function filterImage(d) {
   var img, j;

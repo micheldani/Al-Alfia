@@ -13,6 +13,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="owl.carousel.css">
   <link rel="stylesheet" href="owl.theme.default.css">
+  <link href="reset.css" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
   <link href="style-bg.css" rel="stylesheet">
   <link href="style-contact.css" rel="stylesheet">
@@ -49,7 +50,7 @@
       <!-- FILTERS -->
       <div class="w-4-col justify-end">
         <div class="block-content full">
-          <button onclick="myFunction()" class="dropbtn bg-gold-1">FILTER BY SECTOR</button>
+          <button onclick="dropDown()" class="dropbtn bg-gold-1">FILTER BY SECTOR</button>
           <div class="filter-list" id="filterContainer">
             <a class="filter selected" onclick="filterSelection('all');filterImage('all');filterTitle('all')">show
               all</a>
@@ -199,6 +200,23 @@
   </footer>
 
   <!-- JAVASCRIPT -->
+  <script>
+    function dropDown() {
+      document.getElementById("filterContainer").classList.toggle("show-list");
+    }
+    window.onclick = function (event) {
+      if (!event.target.matches(".dropbtn")) {
+        var dropdowns = document.getElementsByClassName("filter-list");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains("show-list")) {
+            openDropdown.classList.remove("show-list");
+          }
+        }
+      }
+    };
+  </script>
   <script src="_script/nav.js"></script>
   <script src="_script/filter.js"></script>
 </body>

@@ -4,7 +4,20 @@
 }
 .carousel-item {
   height: calc(100vh - calc(var(--logo-height) + var(--nav-padding-y) + var(--nav-padding-y)));
-  cursor: url(_assets/ui/cursor-arrow.png) 25 25, auto;
+  position: relative;
+}
+.carousel-container::after {
+  content: url(/_assets/ui/scroll.png);
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 250ms ease;
+}
+.carousel-container:hover::after {
+  opacity: 1;
 }
 .carousel-item h1 {
   text-shadow: 0 10px 50px #a58023;

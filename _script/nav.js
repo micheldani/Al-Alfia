@@ -38,20 +38,3 @@ function openPage(pageHead, pageName, elmnt, bg) {
   elmnt.className = "tablink active";
 }
 document.getElementById("defaultOpen").click();
-
-// SUBSIDIARIES
-function myFunction() {
-  document.getElementById("filterContainer").classList.toggle("show-list");
-}
-window.onclick = function (event) {
-  if (!event.target.matches(".dropbtn")) {
-    var dropdowns = document.getElementsByClassName("filter-list");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show-list")) {
-        openDropdown.classList.remove("show-list");
-      }
-    }
-  }
-};
