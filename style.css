@@ -559,6 +559,10 @@ footer {
     padding: 0;
     margin-bottom: 1rem;
   }
+  h3 {
+    font-size: 2.5rem;
+    word-wrap: normal;
+  }
   main {
     padding-bottom: 4rem;
   }

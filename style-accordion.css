@@ -4,7 +4,7 @@
   width: 100%;
   overflow: hidden;
 }
-.accordion .panel {
+.panel {
   position: relative;
   flex: 1;
   transition: all 0.5s ease-in-out;
@@ -12,13 +12,22 @@
   margin: 4px;
   padding: 0;
 }
-.accordion .panel:hover {
+.panel:hover {
   flex-grow: 3;
 }
-.accordion .panel .panel-head {
+@keyframes accordion {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    color: white;
+    background-color: var(--grey-30);
+  }
+}
+.panel-head {
   color: rgba(255, 255, 255, 0);
   background: rgba(0, 0, 0, 0);
-  transition: all 0.5s ease-in-out;
   position: absolute;
   padding: 1em 1em 1.5em;
   width: 100%;
@@ -26,19 +35,22 @@
   transform: translateY(-50%);
   text-align: center;
   z-index: 2;
+  transition: all 0.5s ease-in-out;
 }
-.accordion .panel:hover .panel-head {
-  color: white;
-  background: var(--grey-30);
+.panel:hover .panel-head {
+  animation-name: accordion;
+  animation-delay: 0.3s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
-.accordion .panel img {
+.panel img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all 0.5s ease-in-out;
   filter: grayscale(100%);
 }
-.accordion .panel:hover img {
+.panel:hover img {
   filter: grayscale(0);
 }
 

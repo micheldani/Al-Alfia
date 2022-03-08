@@ -67,7 +67,7 @@
   top: 0;
   right: 0;
   width: 100vw;
-  height: 160vh;
+  height: calc(100vw * 19 / 36);
   background-image: url(_assets/ui/hero-03-x.jpg);
   background-position: top right;
   background-size: contain;
