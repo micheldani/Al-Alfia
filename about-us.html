@@ -9,14 +9,15 @@
   <title>Al Alfia Holding</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="owl.carousel.css">
-  <link rel="stylesheet" href="owl.theme.default.css">
-  <link href="style.css" rel="stylesheet" />
-  <link href="style-accordion.css" rel="stylesheet">
-  <link href="style-bg.css" rel="stylesheet">
-  <link href="style-about.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="owl.carousel.css" />
+  <link rel="stylesheet" href="owl.theme.default.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-accordion.css" />
+  <link rel="stylesheet" href="style-bg.css" />
+  <link rel="stylesheet" href="style-about.css" />
 </head>
 
 <body>
@@ -57,10 +58,11 @@
 
   <main class="bg-main-01" id="tabbg">
     <div class="block-center tabnav">
-      <button class="tablink" id="defaultOpen" onclick="openPage('h-ceo', 'ceo', this, 'bg-main-01')">message from
+      <button class="tablink" onclick="openPage('h-ceo', 'ceo', this, 'bg-main-01')">message from
         ceo</button>
       <button class="tablink" onclick="openPage('h-about', 'about', this, 'none')">about us</button>
-      <button class="tablink" onclick="openPage('h-management', 'management', this, 'bg-main-01')">management</button>
+      <button class="tablink" id="defaultOpen"
+        onclick="openPage('h-management', 'management', this, 'bg-main-01')">management</button>
       <button class="tablink" onclick="openPage('h-finance', 'finance', this, 'bg-main-01')">financials</button>
     </div>
 
@@ -207,21 +209,21 @@
               <h3 class="text-copper">building blocks of our growth</h3>
             </div>
             <div class="grid-panel">
-              <img src="_assets/icons/icons_i-leadership.png" alt="">
+              <img class="growth-img" src="_assets/icons/icons_i-leadership.png" alt="">
               <h4 class="text-grey-80">leadership</h4>
               <p>We shape and empower strong leaders who apply vision,
                 depth, and energy into the pursuit of profitable growth
                 and sustainable development.</p>
             </div>
             <div class="grid-panel">
-              <img src="_assets/icons/icons_i-client-centric.png" alt="">
+              <img class="growth-img" src="_assets/icons/icons_i-client-centric.png" alt="">
               <h4 class="text-grey-80">client centricity</h4>
               <p>We deliver on projects and investments that fulfil the
                 needs and ambitions of our clients, communities, and
                 markets of operation.</p>
             </div>
             <div class="grid-panel">
-              <img src="_assets/icons/icons_i-integrity.png" alt="">
+              <img class="growth-img" src="_assets/icons/icons_i-integrity.png" alt="">
               <h4 class="text-grey-80">integrity</h4>
               <p>We adhere to an uncompromising work ethic in our
                 business conduct, operating in an environment of
@@ -229,14 +231,14 @@
                 management and conflict resolution.</p>
             </div>
             <div class="grid-panel">
-              <img src="_assets/icons/icons_i-partnership.png" alt="">
+              <img class="growth-img" src="_assets/icons/icons_i-partnership.png" alt="">
               <h4 class="text-grey-80">partnership</h4>
               <p>We build longstanding relationships with our partners,
                 suppliers, financiers, and subcontractors on common
                 ground of trust and transparency.</p>
             </div>
             <div class="grid-panel">
-              <img src="_assets/icons/icons_i-innovation.png" alt="">
+              <img class="growth-img" src="_assets/icons/icons_i-innovation.png" alt="">
               <h4 class="text-grey-80">innovation</h4>
               <p>We believe that businesses of the future are built on
                 bold ideas and people that constantly adapt, reimagine,
@@ -248,13 +250,54 @@
     </div>
 
     <div id="management" class="tabcontent">
-      <h3>Management Team</h3>
-      <p>These are the key people that make Al Alfia what it is today</p>
+      <div class="w-12-col justify-center">
+        <div class="block-center justify-center row-column">
+          <div class="block-content align-center">
+            <h2 class="text-copper">Management Team</h2>
+            <div class="two-col-grid">
+              <div class="personnel-card">
+                <div class="profile-pic-container">
+                  <img class="profile-pic" src="_assets/images/p-noel-kerr.jpg" alt="">
+                </div>
+                <div class="info-container">
+                  <div class="full-name">Noel Kerr</div>
+                  <div class="job-title">Managing Director & Group CEO</div>
+                </div>
+              </div>
+              <div class="personnel-card">
+                <div class="profile-pic-container">
+                  <img class="profile-pic" src="_assets/images/p-tony-guinan.jpg" alt="">
+                </div>
+                <div class="info-container">
+                  <div class="full-name">Tony Guinan</div>
+                  <div class="job-title">Executive Director & Group COO</div>
+                </div>
+              </div>
+              <div class="personnel-card">
+                <div class="profile-pic-container">
+                  <img class="profile-pic" src="_assets/images/p-christine.png" alt="">
+                </div>
+                <div class="info-container">
+                  <div class="full-name">Christine Hayward</div>
+                  <div class="job-title">Chief Financial Officer</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="finance" class="tabcontent">
-      <h3>Group Finances</h3>
-      <p>Transparency is a key Value for our group.</p>
+      <div class="w-12-col justify-center">
+        <div class="block-center row-column">
+          <div class="block-content align-center">
+            <h2 class="text-copper">Group Finances</h2>
+            <p>Transparency is one of the core values that Al-Alfia group stands for.</p>
+            <img class="financial-image" src="_assets/images/chart.png" alt="">
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 

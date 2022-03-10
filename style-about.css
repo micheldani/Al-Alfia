@@ -1,15 +1,23 @@
 .values {
-  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   width: 100vw;
   padding: 2rem 2rem 3rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 .values img {
   width: 4rem;
   margin-bottom: 1rem;
+}
+.values .w-4-col {
+  max-width: 40ch;
 }
 .tabnav {
   margin-top: 5rem;
@@ -52,14 +60,55 @@
   width: 100%;
 }
 
+.personnel-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+.profile-pic-container {
+  background-color: aqua;
+  border-radius: 50vh;
+  overflow: hidden;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.info-container {
+  margin-left: 1.5rem;
+}
+.full-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.job-title {
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.financial-image {
+  max-width: 80%;
+}
+
 @media screen and (max-width: 720px) {
   .values {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 1rem 1.5rem 3rem;
   }
   .tabnav {
     margin-top: 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     background-size: 0;
     background-color: var(--grey-5);
