@@ -128,6 +128,9 @@ section {
   -ms-flex-direction: column;
   flex-direction: column;
   max-width: 90vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .w-12-col {
   width: 100%;
@@ -480,6 +483,14 @@ footer {
 
 .footer-sm-icon {
   width: 32px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.footer-sm-icon:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .footer-title {

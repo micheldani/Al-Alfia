@@ -6,6 +6,8 @@
 .contact-phone,
 .contact-email {
   position: relative;
+  outline-offset: 6px;
+  outline: 0 solid white;
 }
 .contact-phone,
 .contact-email {
@@ -13,6 +15,14 @@
 }
 .contact-location::before {
   content: url("_assets/ui/icons-contact_location.svg");
+}
+.contact-location:hover,
+.contact-phone:hover,
+.contact-email:hover {
+  outline: 1px white solid;
+  /* -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); */
 }
 .contact-phone::before {
   content: url("_assets/ui/icons-contact_phone.svg");
