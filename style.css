@@ -600,7 +600,9 @@ footer {
     right: 32px;
   }
   .nav-menu {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -620,13 +622,19 @@ footer {
     box-shadow: 8px 8px 12px rgba(20, 20, 80, 0.2);
     outline: 1px solid white;
     z-index: 4;
+    opacity: 0;
+    -webkit-transform: translateY(2rem);
+    -ms-transform: translateY(2rem);
+    transform: translateY(2rem);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
-  .responsive {
-    display: -ms-flex;
-    display: -moz-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .nav-menu.responsive {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
   }
   .nav-link {
     display: block;

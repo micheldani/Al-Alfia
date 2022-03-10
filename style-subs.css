@@ -12,7 +12,11 @@ a.filter {
   line-height: 0.8;
   padding: 0 1rem;
   background-position: right bottom;
-  transform-origin: right;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
   cursor: pointer;
 }
@@ -21,12 +25,18 @@ a.filter + a.filter {
 }
 a.filter:hover {
   color: var(--copper);
-  transform: translateX(-12px);
-  transform: scale(1.1);
+  -webkit-transform: translateX(-12px);
+      -ms-transform: translateX(-12px);
+          transform: translateX(-12px);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 a.selected {
   color: var(--copper);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
   pointer-events: none;
   background-image: var(--grad-gold);
   background-size: 4px 85%;
@@ -44,6 +54,7 @@ a.selected {
   position: relative;
   width: 100%;
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
 }
 .subsidiary-overlay {
@@ -66,6 +77,8 @@ a.selected {
   text-transform: uppercase;
   color: white;
   background-image: var(--grad-gold);
+  -webkit-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
 .subsidiary-overlay:hover P {
@@ -77,12 +90,18 @@ a.selected {
   width: 100%;
   top: 0;
   left: 0;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
-  transform-origin: top;
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
   z-index: 1;
 }
 .subsidiary-cel:hover .subsidiary-grid-logo {
-  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 .subsidiary-cel-bg {
   width: 100%;
@@ -102,7 +121,8 @@ a.selected {
   text-align: center;
 }
 .show {
-  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .show-img {
@@ -116,6 +136,7 @@ a.selected {
 .subsidiary-id-card {
   display: grid;
   width: 100%;
+  grid-auto-rows: -webkit-min-content;
   grid-auto-rows: min-content;
   grid-template-columns: 2fr 1fr;
   gap: 0 1rem;
@@ -153,9 +174,13 @@ a.selected {
 }
 
 .subsidiary-info {
-  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 560px;
   margin-right: 5%;
 }
@@ -226,7 +251,8 @@ a.selected {
     text-align: left;
     color: white;
     border: 0;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .filter-list {
     display: none;
@@ -235,15 +261,20 @@ a.selected {
     top: 3rem;
     left: 50%;
     padding: 1em 0;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     background-color: var(--grey-10);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
   a.filter {
     font-size: 1.5rem;
     text-align: center;
-    transform-origin: center;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
   }
   a.filter + a.filter {
     margin: 1em 0 0;

@@ -34,7 +34,12 @@
   cursor: pointer;
   padding-bottom: 16px;
   font-size: 16px;
+  background-position: left bottom 4px;
+  background-size: 0% 4px;
   background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 .tablink + .tablink {
   margin-left: 5%;
@@ -43,16 +48,15 @@
   color: var(--grey-75);
   pointer-events: none;
   background-image: var(--grad-gold);
-  background-size: 100% 9px;
+  background-size: 100% 10px;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: left bottom;
 }
 .tablink:hover {
-  background-image: var(--grad-gold);
+  background-image: var(--grad-grey);
   color: black;
-  background-size: 100% 8px;
+  background-size: 100% 4px;
   background-repeat: no-repeat;
-  background-position: center bottom;
 }
 .tabcontent {
   display: none;
