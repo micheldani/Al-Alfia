@@ -109,7 +109,7 @@ section,
   position: relative;
 }
 section {
-  margin-top: clamp(3rem, 7vw, 7rem);
+  margin-top: clamp(4rem, 7vw, 7rem);
   width: 100%;
 }
 .block-center {
