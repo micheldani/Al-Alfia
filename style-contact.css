@@ -46,6 +46,7 @@
 .careers-form-container {
   max-width: 720px;
   font-weight: 300;
+  width: 100%;
   color: var(--grey-75);
 }
 .careers-text {
@@ -55,7 +56,10 @@
 .contact-form-container {
   margin-right: 8%;
   max-width: 640px;
+  width: 100%;
   color: var(--grey-75);
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
 }
 .contact-form-container p {
   margin-bottom: 1.5rem;
@@ -146,6 +150,23 @@ input[type="file"]::file-selector-button:active {
 }
 .submit .button {
   margin-top: 1rem;
+}
+
+.submitted-box {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem;
+  text-align: center;
+  background: var(--grey-5);
+  height: 100%;
+}
+.submitted-box p {
+  margin-bottom: 1rem;
+}
+.submitted-box a {
+  text-decoration: none;
+  color: var(--grey-75);
+  font-weight: 400;
 }
 
 /* SOCIAL MEDIA */
