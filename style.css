@@ -388,7 +388,7 @@ button {
 
 .button {
   display: block;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
@@ -735,6 +735,7 @@ footer {
     font-size: 1.25rem;
     -ms-flex-item-align: center;
     align-self: center;
+    margin-top: 1.5rem;
   }
   h3 {
     font-size: 2rem;
