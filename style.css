@@ -50,6 +50,7 @@ body {
   font-family: "Roboto", sans-serif;
   text-rendering: optimizeLegibility;
   color: var(--grey-75);
+  overflow-x: hidden;
 }
 
 html,
