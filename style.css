@@ -38,6 +38,7 @@ html {
 
 body {
   position: relative;
+  width: 100%;
   display: -ms-flex;
   display: -moz-flex;
   display: -webkit-box;
@@ -50,12 +51,11 @@ body {
   font-family: "Roboto", sans-serif;
   text-rendering: optimizeLegibility;
   color: var(--grey-75);
-  overflow-x: hidden;
 }
 
-html,
-body {
-  width: 100%;
+html {
+  width: 100vw;
+  overflow-x: hidden;
   height: 100%;
 }
 
